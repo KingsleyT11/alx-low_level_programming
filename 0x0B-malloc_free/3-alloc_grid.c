@@ -11,10 +11,10 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, j, b;
+	int i, j, a, b;
 	int **p;
 
-	int (width <= 0 || height)
+	int (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
