@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * *_strdup - copies the string given as parameter
@@ -9,22 +9,29 @@
  */
 char *_strdup(char *str)
 {
-	char *duplicate;
-	unsigned int i, len;
-
-	i = 0;
-	len = 0;
+	char *nstr;
+	unsigned int len, i;
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 
-	while (str[len])
+	len = 0;
+	while (str[len] != '\0')
+	{
 		len++;
-	duplicate = malloc(sizeof(char) * (len + 1));
+	}
 
-	if (duplicte == NULL)
+	nstr = malloc(sizeof(chr) * (len + 1));
+	if (nstr == NULL)
+	{
 		return (NULL);
-	while ((duplicate[i] = str[i]) != '\0')
-		i++;
-	return (duplicate);
+	}
+	for (i = 0; i < len; i++)
+	{
+		nstr[i] = str[i];
+	}
+	nstr[ln] = '\0';
+	return (nstr);
 }
