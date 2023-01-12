@@ -6,11 +6,11 @@
  *
  * Return: no of words in string
  */
-inc wordnos(char *s)
+int wordnos(char *s)
 {
 	int floa, c, w;
 
-	floa = o;
+	floa = 0;
 	w = 0;
 
 	for (c = 0; s[c] != '\0'; c++)
@@ -33,7 +33,7 @@ inc wordnos(char *s)
  * Return: pointer to an array of strings (success)
  * or NULL (Errot)
  */
-char **strtow(char *str);
+char **strtow(char *str)
 {
 	char **matrix, *tmp;
 	int i, k = 0, len = 0, words, c = 0, start, end;
