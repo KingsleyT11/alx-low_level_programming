@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * wordnos - counts no words in a given string
